@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--IT 328
+    Author: Sofiya Antonyuk
+    Date: 04-16-17-->
+  <title>Sofiya Antonyuk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Navbar-->
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://sofiya.greenrivertech.net/328/dating">
+          My Dating Website
+        </a>
+      </div>
+			<div class="pull-right">
+				<a href ="http://sofiya.greenrivertech.net/328/dating/admin">Admin</a>
+			</div>
+		</div>
+    </div>
+  </nav>
+
+<!-- Main Body-->
+<div class="container">
+  <div class="panel panel-default">
+		<div class="panel-body">
+			<h1>Personal Information</h1>
+	
+			<hr>
+			<form action="profile" method="post" class="form-horizontal">
+				<div class="form-group">
+					<div class= "col-sm-8">
+						<p><strong> First Name<br/> </strong>
+						<input class="form-control" type="text" name="firstName" id="firstName" placeholder="Sarah"></p>
+						<p><strong> Last Name<br/></strong>
+						<input class="form-control" type="text" name="lastName" id="lastName" placeholder="Smith"></p>
+						<p><strong> Age<br/></strong>
+						<input class="form-control" type="number" name="age" id="age" placeholder="30"></p>
+						<p><strong> Gender<br/></strong>
+						<input type ="radio" name="gender" value="Male"> Male &nbsp; &nbsp; &nbsp; &nbsp; 
+						<input type ="radio" name="gender" value="Female"> Female<br/></p>
+						<p><strong>  Phone Number<br/></strong>
+						<input class="form-control" type="tel" name="phone" id="phone" placeholder="222-333-4444"></p>
+						<p><strong> Premium Membership<br/></strong> 
+						<input type="checkbox" name="membership">Sign me up for a Premium Account!<br/></p>
+					</div>
+						<div class="col-sm-4">
+							<div class="panel panel-default">
+								<div class="panel-footer"><strong>Note:</strong> All information entered is protected by our
+								<a href="#">privacy policy</a>. Profile information can only be viewed by others with your permission.
+								</div>
+							</div>
+						</div>
+						<br>
+
+				</div>
+				<div class="pull-right">
+					<button type="submit" class="btn btn-primary">Next ></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

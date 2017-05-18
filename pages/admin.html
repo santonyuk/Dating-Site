@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--IT 328
+    Author: Sofiya Antonyuk
+    Date: 04-30-17-->
+  <title>Sofiya Antonyuk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Navbar-->
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://sofiya.greenrivertech.net/328/dating">
+          My Dating Website
+        </a>
+      </div>
+			<div class="pull-right">
+				<a href ="http://sofiya.greenrivertech.net/328/dating/admin">Admin</a>
+			</div>
+		</div>
+    </div>
+  </nav>
+
+<!-- Main Body-->
+<div class="panel-body">
+	<table class="table table-striped">
+		<thead>
+			<td>ID</td>
+			<td>Name</td>
+			<td>Age</td>
+			<td>Gender</td>
+			<td>Phone</td>
+			<td>Email</td>
+			<td>State</td>
+			<td>Seeking</td>
+			<td>Bio</td>
+			<td>Premium</td>
+			<td>Image</td>
+			<td>Interests</td>
+		</thead>
+		<tbody>
+			<?php
+			//display all members
+			foreach($members as $member)
+			{
+			$id = $member['member_id'];
+			$name = $member['fname'] . " " . $member['lname'];
+			$age = $member['age'];
+			$gender = $member['gender'];
+			$phone = $member['phone'];
+			$email = $member['email'];
+			$state = $member['state'];
+			$seeking = $member['seeking'];
+			$bio = $member['bio'];
+			$premium = $member['premium'];
+			$image = $member['image'];
+			$interests = $member['interests'];
+			
+		if($premium == 1)
+		{
+			$premium = "<input type ='checkbox' name='premium' value='premium' checked>Premium";
+		} else
+		{
+			$premium = "<input type ='checkbox' name='premium' value='premium'>Premium";
+		}
+		echo
+		"<tr>
+		<td>$id</td>
+		<td>$name</td>
+		<td>$age</td>
+		<td>$gender</td>
+		<td>$phone</td>
+		<td>$email</td>
+		<td>$state</td>
+		<td>$seeking</td>
+		<td>$bio</td>
+		<td>$premium</td>
+		<td>$image</td>
+		<td>$interests</td>
+		</tr>";
+		}
+		?>
+		</tbody>
+	   </table>
+	</div>
+  
+
+
+</body>
+</html>

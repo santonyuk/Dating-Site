@@ -1,0 +1,15 @@
+{
+	"name": "sofiya/dating",
+	"authors": [
+		{
+			"name": "Sofiya Antonyuk",
+			"email": "santonyuk2@mail.greenriver.edu"
+		}
+	],
+	"require": {
+		"bcosca/fatfree-core": "dev-master"
+	},
+	"autoload": {
+		"classmap": ["model/", "classes/"]
+	}
+}

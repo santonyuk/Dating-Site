@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--IT 328
+    Author: Sofiya Antonyuk
+    Date: 04-16-17-->
+  <title>Sofiya Antonyuk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Navbar-->
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://sofiya.greenrivertech.net/328/dating">
+          My Dating Website
+        </a>
+      </div>
+			<div class="pull-right">
+				<a href ="http://sofiya.greenrivertech.net/328/dating/admin">Admin</a>
+			</div>
+		</div>
+    </div>
+  </nav>
+
+<!-- Main Body-->
+<div class="container">
+	<form action="<?= $summaryRoute ?>" method="post" class="form-horizontal" id="usrform">
+		<div class="panel panel-default" id="info_form">
+			<div class="panel-body">
+				<h1>Profile</h1>
+				
+				<hr>
+				<div class="col-sm-6">
+					<p><strong> Email</strong></p>
+					<input class="form-control" type="text" name="email" id="email" placeholder="my_email@gmail.com">
+					<br/>
+					<p><strong>State</strong></p>
+					<input class="form-control"  name="state" list="state" placeholder="Washington">
+					<datalist id="state">
+						<option value="Alabama">
+						<option value="Alaska">
+						<option value="Arizona">
+						<option value="Arkansas">
+						<option value="California">
+						<option value="Colorado">
+						<option value="Connecticut">
+						<option value="Delaware">
+						<option value="District Of Columbia">
+						<option value="Florida">
+						<option value="Georgia">
+						<option value="Hawaii">
+						<option value="Idaho">
+						<option value="Illinois"> 
+						<option value="Indiana">
+						<option value="Iowa"> 
+						<option value="Kansas"> 
+						<option value="Kentucky">
+						<option value="Louisiana"> 
+						<option value="Maine"> 
+						<option value="Maryland"> 
+						<option value="Massachusetts">
+						<option value="Michigan">
+						<option value="Minnesota"> 
+						<option value="Mississippi"> 
+						<option value="Missouri"> 
+						<option value="Montana">
+						<option value="Nebraska"> 
+						<option value="Nevada">
+						<option value="New Hampshire"> 
+						<option value="New Jersey">
+						<option value="New Mexico"> 
+						<option value="New York"> 
+						<option value="North Carolina"> 
+						<option value="North Dakota"> 
+						<option value="Ohio"> 
+						<option value="Oklahoma">
+						<option value="Oregon"> 
+						<option value="Pennsylvania">
+						<option value="Rhode Island"> 
+						<option value="South Carolina">
+						<option value="South Dakota"> 
+						<option value="Tennessee"> 
+						<option value="Texas">
+						<option value="Utah"> 
+						<option value="Vermont">
+						<option value="Virginia">
+						<option value="Washington"> 
+						<option value="West Virginia"> 
+						<option value="Wisconsin ">
+						<option value="Wyoming">
+					</datalist>
+					<br />
+					
+					<p><strong> Seeking<br/></strong></p>
+					<input type ="radio" name="genderSeeking" value="Male"> Male &nbsp; &nbsp; &nbsp; &nbsp; 
+					<input type ="radio" name="genderSeeking" value="Female"> Female<br/>
+
+				</div>
+				<div class="col-sm-6">
+					<p><strong>Biography<br/></strong></p>
+					<textarea name="biography" form="usrform" rows="5" cols="50" placeholder="Something about me..."></textarea>
+				
+					<br>
+					<br>
+
+				</div>
+			
+				<div class="pull-right">
+					<button type="submit" class="btn btn-primary">Next ></button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
